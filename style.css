@@ -4,11 +4,14 @@ body {
 }
 
 .hero-section {
-    background-image: url(./img/Dhaka.jpg);
+    background-image: url(./img/Bangladesh-7.jpg);
     background-size: cover;
     background-position: center;
     color: white;
     padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+    padding: 0; 
 }
 
 .hero-section h1 {
@@ -32,3 +35,68 @@ body {
 footer {
     background-color: #343a40;
 }
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+  }
+
+
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: left;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    filter: invert(1); 
+  }
+ 
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section .text-center {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    border-radius: 5px; 
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff; /* White icon color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5; /* Ensure controls are on top of the carousel */
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: inherit; /* Inherit the background color from the control buttons */
+    border-radius: 50%; /* Circular background for the icons */
+    width: 24px; /* Width of the icon */
+    height: 24px; /* Height of the icon */
+    background-size: 50%; /* Adjust icon size */
+  }
