@@ -1,17 +1,26 @@
 /* Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
 .hero-section {
-    background-image: url(./img/Bangladesh-7.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 150px 0;
-    position: relative;
-    overflow: hidden;
-    padding: 0; 
+  background-image: url('./img/Bangladesh-7.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 0; /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-section h1 {
@@ -78,25 +87,41 @@ footer {
   
   .btn-primary {
     padding: 10px 20px;
-    border-radius: 5px; 
+    border-radius: 10px; 
   }
 
   .carousel-control-prev, .carousel-control-next {
     width: 50px; 
     height: 50px; 
     border-radius: 50%; 
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #fff; /* White icon color */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 5; /* Ensure controls are on top of the carousel */
-  }
+    z-index: 5;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
 
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: inherit; /* Inherit the background color from the control buttons */
-    border-radius: 50%; /* Circular background for the icons */
-    width: 24px; /* Width of the icon */
-    height: 24px; /* Height of the icon */
-    background-size: 50%; /* Adjust icon size */
-  }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none; 
+    border-radius: 100%; 
+    width: 40px; 
+    height: 40px; 
+    background-size: 100%; 
+    border: solid 2px white; 
+    
+}
+
+.carousel-control-prev-icon::after {
+    content: '\2039'; 
+    font-size: 24px;
+    color: white; 
+}
+
+.carousel-control-next-icon::after {
+    content: '\203A'; 
+    font-size: 24px;
+    color: white; 
+}
